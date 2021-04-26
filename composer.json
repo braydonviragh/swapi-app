@@ -1,0 +1,10 @@
+{
+    "name": "bviragh/composer",
+    "authors": [
+        {
+            "name": "Braydon Viragh",
+            "email": "bradyviragh@gmail.com"
+        }
+    ],
+    "require": {}
+}
