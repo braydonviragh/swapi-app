@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import getAllStarwarsPeople from './PlanetsList';
 
 class Person extends Component {
      
@@ -13,8 +14,19 @@ class Person extends Component {
         }
     }
 
-    componentDidMount() { 
+   /*componentDidMount() { 
         fetch('http://127.0.0.1:8000/getPeople')
+        .then(res => res.json())
+        .then(json => {
+            this.setState ({
+                isLoaded: true,
+                items: json,
+                search: "",
+            }) 
+        })
+    }; */
+    componentDidMount() { 
+        getAllStarwarsPeople()
         .then(res => res.json())
         .then(json => {
             this.setState ({

@@ -22,11 +22,8 @@ Route::get('/', function () {
 //Star WArs API Connections
 Route::get('getPeople', "App\Http\Controllers\People@getPeople");
 
-Route::get('getPerson/{$id}', "App\Http\Controllers\People@getPerson");
-
 
 Route::get('getPlanets', "App\Http\Controllers\Planets@getPlanets");
 
 Route::get('getStarships', "App\Http\Controllers\Starships@getStarships");
 
-Route::get('getFilms', "App\Http\Controllers\Films@getFilms");

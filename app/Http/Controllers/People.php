@@ -9,6 +9,8 @@ class People extends Controller
 {
     //
     function getPeople() { 
-        return Http::get('https://swapi.dev/api/people/');
+     
+        
+        return Http::get("https://swapi.dev/api/people/?page=3");
     }
 }

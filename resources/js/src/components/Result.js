@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function Result() {
-    return (
-        <div>
-            Ignore this component
-        </div>
-    )
+export class Result extends Component {
+    render() {
+        return (
+            <div>
+                
+            </div>
+        )
+    }
 }
 
 export default Result
+
